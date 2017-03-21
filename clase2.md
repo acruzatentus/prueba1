@@ -9,19 +9,23 @@ Clase 2 (21 de Marzo de 2017)
 + Se recomienda incluirlo dentro de la etiqueta **<body></body>** de HTML
 + Utilizar la función **echo** de PHP para *mostrar* el texto en el navegador
 
+~~~
 <body>
-    <?php
+    <?php>
     echo "Hola mundo";
-     ?>
+    ?>
 </body>
+~~~
 
 6. Crear una variable e imprimir su valor con PHP
 
+~~~
 <?php
   $numero = 1;
   $saludo = "Hola mundo";
   echo $numero;
 ?>
+~~~
 
 + El código anterior imprime el valor dentro de la variable *$numero*
 ---
@@ -30,11 +34,13 @@ Clase 2 (21 de Marzo de 2017)
 
 El operador de concatenación es el punto "."
 
+~~~
 <?php
   $numero = 1;
   $saludo = "Hola mundo";
   echo "Soy el numero ".$numero;
 ?>
+~~~
 
 + El código anterior imprime "Soy el numero 1"
 ---
@@ -43,11 +49,13 @@ El operador de concatenación es el punto "."
 
 El operador de concatenación es el punto "."
 
+~~~
 <?php
   $numero = 1;
   $saludo = "Hola mundo";
   echo $saludo . " soy el numero " . $numero;
 ?>
+~~~
 
 + El código anterior imprime "Hola mundo soy el numero 1"
 ---
@@ -56,6 +64,7 @@ El operador de concatenación es el punto "."
 
 - Nota: Los comentarios en PHP se pueden realizar con // *una linea* y /* - */ *múltiples lineas*
 
+~~~
 <?php
   $numero = 1;
   $saludo = "Hola mundo";
@@ -63,12 +72,14 @@ El operador de concatenación es el punto "."
     echo $saludo;
   }
 ?>
+~~~
 
 + El código anterior imprime "Hola mundo" si existe la váriable *numero*
 ---
 
 10. Comparaciones
 
+~~~
 <?php
   $numero = 1;
   $saludo = "Hola mundo";
@@ -78,6 +89,7 @@ El operador de concatenación es el punto "."
     echo "La variable numero no es igual a 1";
   }
 ?>
+~~~
 
 Se pueden utilizar los comparadores >, <, ==, ===, etc...
 
