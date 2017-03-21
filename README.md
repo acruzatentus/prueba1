@@ -34,4 +34,3 @@ Desarrollo WEB PHP y Javascript
 + Sintaxis Basica
 + Funciones
 + Variables
-# DesarrolloWebPHPyJS
