@@ -1,6 +1,12 @@
 Clase 2 (21 de Marzo de 2017)
 =============================
 
+# ¿Como funciona PHP?
+
+PHP es interpretado del lado del servido, para poder acceder al sitio web el navegador hace una consulta al servidor por medio de HTTP REQUEST el cual le envía el archivo PHP y este le devuelve el HTML interpretado correctamente.
+
+Al igual CSS y Javascript se ejecutan en el navegador o del lado del cliente. 
+
 1. Ejecutar XAMPP o APPSERVER o WAMPPSERVER, ETC
 2. Crear una carpeta en directorio web (htdocss, www)
 3. Crear un archivo index.php
@@ -95,3 +101,26 @@ Se pueden utilizar los comparadores >, <, ==, ===, etc...
 
 + El código anterior imprime "Hola mundo" si el valor de la váriable *numero* es igual a 1 sino el mensaje "La variable numero no es igual a 1"
 ---
+
+11. Importar o incluir un archivo
+
++ Crear un archivo llamado **funciones.php**
++ El archivo contendrá la siguiente información:
+
+~~~
+<?php
+echo "Archivo externo";
+?>
+~~~
+
++ Las funciones que sirven para llamar o incluir son **include("ARCHIVO.php");**
++ En el archivo index.php incluimos el siguiente codigo:
+
+~~~
+<p>
+  <?php
+    include('funciones.php');
+   ?>
+</p>
+~~~
+
