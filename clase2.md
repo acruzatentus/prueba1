@@ -123,4 +123,3 @@ echo "Archivo externo";
    ?>
 </p>
 ~~~
-
