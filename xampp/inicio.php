@@ -1,6 +1,19 @@
 <?php
   if (isset($_POST['enviar']) && $_POST['enviar'] == '1') {
-    print_r($_POST);
+    // print_r($_POST);
+    $nombre = $_POST['nombre'];
+    $correo = $_POST['correo'];
+    $pais = $_POST['pais'];
+    if (empty($nombre)) {
+      echo "Debe ingresar su nombre";
+      exit;
+    } if (empty($correo)) {
+      echo "Debe ingresar su correo";
+      exit;
+    } if ($pais == 0) {
+      echo "Debe seleccionar un país";
+      exit;
+    }
   }
  ?>
 
@@ -26,8 +39,8 @@
               <input type="email" name="correo" value="" class="form-control">
             </div>
             <div class="form-group">
-              <label for="correo">Ingrese país</label>
-              <select class="form-control" name="">
+              <label for="pais">Ingrese país</label>
+              <select class="form-control" name="pais">
                 <option value="0">Seleccione</option>
                 <option value="1">Venezuela</option>
                 <option value="2">Chile</option>
