@@ -85,7 +85,9 @@ Validar que los campos del formulario tengan un valor asignado
 ~~~
 
 Asignación para la siguiete clase:
+
 Grupos de 2 o 3
+
 Buscar una aplicación para elaborar y mostrar en la clase.
 
 
